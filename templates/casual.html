@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+	<div>
+		<div class="content">
+			<h2>Casual meals</h2>
+			<p>What meal would you eat at this time?</p>
+			<h4>{{tte}}</h4>
+				<div>
+					
+						<img src="static/images/meatballs.jpg" alt="meatballs">
+					
+					<h4>Daily Ukrainian meals that people make at home are affected by globalization and availability of imported food, 
+					but in many families casual meals include something not usual in other countries.</h4>
+				</div>
+				<div>
+					<p>A meal at home usually served for breakfast, lunch, and dinner. 
+					For children a porridge with milk has been common for a long time. 
+					Sandwitches or eggs, some light sausages are often a breakfast food. 
+					Lunch, if it is served at home, usually includes three courses:</p>
+					<p>
+					{% include 'table.html' %}
+					<ol>
+						<li>First course: so-called liquid meal, like soup, special Ukrainian soup borsch, or cold summer soup.</li>
+						<li>Second course: side with meat or fish dish, salad.</li>
+						<li>Drink and fruit: seasonal fruits and "compot".</li>
+					</ol>
+					</p>
+					<p>Dinner has the second course from lunch and hot tea. Used to be wery common, especially for children, to have kwfir
+					or youghurt with plain cookies 30 minutes before bedtime.</p>
+				</div>
+			<h2>Interesting facts</h2>
+				<div>
+					<h4>Meatballls</h4>
+					<p>Differ from the USA meatballs by adding bread soaked in water, onions, garlic, more garlic, eggs. I think the tradition
+					is coming from times when meat was not available in the desired quantity in USSR, and to make something that tastes like meat,
+					additional ingredients were mixed in.</p>
+					<h4>Compot</h4>
+					<p>An affordable drink made from seasonal fruits or berries boiling in water with sugar for 5 minutes. Has some vitamins,
+					served cold or warm, and is still tasty if made from frozen ingredients.</p>
+					<h4>Borsch</h4>
+					<p>A heavy soup traditionally on meat broth, has its color due to beats or tomato paste. The recipies vary a lot, iincluding even 
+					green borch that has a lot of herbs that grow well in summer. Served with sour cream, bread, and garlic.</p>
+				</div>
+		</div>
+	</div>
+{% endblock %}

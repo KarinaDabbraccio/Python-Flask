@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Login </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dabbr.css') }}">           
+    </head>
+    <body>
+        <div>
+          <div class="content">
+             <div>
+				</br><img src="static/images/bg.png" alt="Ukrainian ravioli - vareniki">
+                <h2></br>LOGIN</h2>
+             </div></br></br></br>
+                
+				<form action="{{ url_for('login') }}" method="post">
+                  <!--<h4 class="msg">{{ msg }}</h4></br></br>-->
+					{% with msg = get_flashed_messages() %}
+						{% if msg %}
+							<h4 class="msg">{{ msg }}</h4>
+						{% endif %}
+					{% endwith %}
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+                    <input type="submit" class="btn" value="Sign In"></br></br>
+                </form>
+				
+            <p>Dont't have an account?  <a href="{{url_for('register')}}"> Sign Up here</a></p>
+          </div>
+        </div>
+	</body>
+</html>

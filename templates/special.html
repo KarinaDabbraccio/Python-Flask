@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+	<div>
+		<div class="content">
+			<h2>Special meals</h2>
+				<div>
+						<img src="static/images/p1.jpg" alt="Traditional Christmas Table">
+					<h4>People like to have a big selection of different dishes to be sure that every guest is full and happy.</h4>
+				</div>
+				<div>
+					<p>Appetizers are most likely served before the guests arrive. Drinks typically include water, 
+					juice, and alcohol. Alcohol most likely will be heavy for men and light for women. At the table, some more 
+					or less stable routine is maintained:</p>
+					<p>
+					<ol>
+						{% for li in oli %}
+						<li>{{ li }} </li>
+						{% endfor %}
+					<!-- This was first, before adding as a variable
+						<li>Appetizers and a little drinking.</li>
+						<li>Some hot meals, depends on event, and more alcohol can be taken.</li>
+						<li>Leftovers of appetizers,  drinking and mostly talking bacase should be already full.</li>
+						<li>Might be more hot meals.</li>
+						<li>Leftovers of appetizers, drinking and mostly talking bacase should be already full.</li>
+						<li>In fact, not everyone may still be there for the desert.</li> -->
+					</ol>
+					</p>
+				</div>
+			<h2>Interesting facts</h2>
+				<div>
+					<h4>Appetizers</h4>
+					<p>The difference from the USA is that row vegetables and fresh herbs are alvays there, in winter pickled vegetables.</p>
+					<h4>Barbecue</h4>
+					<p>In the beginning of May everyone wants to enjoy first warm days and have an outdoor meal: pork or chicken "shaslik"
+					is done on the metal sticks over the hot wood after burning them. It has different taste from the barbecue, to measure temperature 
+					people would cut or eat one piece. Vegetables are made as well, and if the wood is hot enough and the time is not a problem,
+					potato is thrown there for several hours.</p>
+					<h4>Baby shower</h4>
+					<p>This selebration is very new and only couple of my friends had it. More common is selebration after the birth.</p>
+					<h4>New Year</h4>
+					<p>In many families New Year is celebrated more than Christmas.</p>
+					<h4>Salads</h4>
+					<p>Some salads that are considered traditional for New Year taste better next day. In fact, after New Year there is so 
+					much leftovers, that the whole next week one can eat them. Because, as it is said, <span>"you will spend a year just as good as you 
+					meet it"</span>.</p>
+				</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,263 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border:"1";
+	border-spacing: 0;
+	width: 70%;
+	background-color:ivory;
+	border:3px solid brown;
+	margin-left:15%;
+}
+
+td, th {
+    border: 2px solid brown;
+    padding: 7px;
+	}
+
+th {
+    text-align:center;
+	font-family:Segoe Print Regular;
+	font-size:14px;
+	color:brown;
+	font-weight: bold;
+	}
+
+caption {
+	text-align:center;
+	font-family:Segoe Print Regular;
+	font-size:20px;
+	line-height:30px;
+	color:brown;
+	padding:5px;
+}
+
+
+
+img {
+		border-radius:15px;
+		width:400px;
+		/*border:1px solid brown;*/
+		}
+	
+	h2 {
+		text-align:center;
+		line-height:1.3;
+		color:brown;
+		font-family:Segoe Print Regular;
+		font-size:25px;
+		font-weight: bold;
+		margin:7px;
+		}
+		
+	h4 {
+		text-align:center;
+		line-height:1.3;
+		color:darkred;
+		font-family:Segoe Print Regular;
+		font-size:15px;
+		font-weight: bold;
+		margin:7px;
+		}
+		
+	div div{
+		width:1260px;
+		text-align:center;
+		background:white;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:0;
+		}
+		
+	p, td {
+		text-align:center;
+		color:brown;
+		font-size:17px;
+		line-height:1.4;
+		font-family:Verdana;
+		width:800px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	
+	span {
+		font-weight: bold;
+	}
+	
+	.header {
+		background:peru;
+		font-style:italic;
+		font-family:Segoe Print Regular;
+		color:brown;
+		text-align:center;
+		font-size:12;
+		line-height:8px;
+		padding:10px 0 15px;
+		margin:0px;
+		position:relative;
+		}
+		
+	.mydate {
+		background:ivory;
+		border:2px solid brown;
+		border-radius:10px;
+		color:brown;
+		line-height:10x;
+		padding:10px;
+		position:fixed;
+		top:15%;
+		right:20%
+	}
+	
+	.msg {
+		background:LightCoral;
+		border:1px solid ivory;
+		border-radius:10px;
+		color:maroon;
+		font-size:20px;
+		font-weight: bold;
+		font-family:Verdana;
+		text-align:center;
+		line-height:35px;
+		padding:0px;
+		/*when no message - the block will be 0 height - invisible*/
+		margin-right:auto;
+		margin-left:auto;
+		width:360px;
+		text-align:center;
+	}
+	
+label {
+        display: block;
+        float: left;
+        width: 150px;
+        text-align: right;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+	  
+	  
+.btn {
+        border:1px solid brown;
+		padding: 10px 40px;
+        background-color: BurlyWood; 
+        color: brown;
+        font-style: oblique;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+  
+.textbox{
+		border:1px solid brown;
+        padding: 10px 40px 10px 3px;
+        background-color: ivory; 
+        color: grey;
+        border-radius: 10px;
+    }
+	
+.textbox:focus{
+	outline: none;
+	border: 2px solid brown;
+	color:brown;	
+}                  
+::placeholder {
+		color: brown;
+        opacity: 0.9;
+        font-style: oblique;
+        
+    }
+	
+	h1 {
+		font-size:35px;
+		margin:15px;
+		font-weight: bold;
+	}
+		
+	ul {
+		text-align:center;
+		padding-top:7px;
+		font-family:Segoe Print Regular;
+		color:brown;
+	}
+	
+	ol {
+		list-style-type: decimal;
+		text-align:left;
+		padding-top:7px;
+		margin-left:150px;
+		font-family:Verdana;
+		line-height:1.4;
+		color:brown;
+	}
+	
+	.topmenu li {
+		display:inline-block;
+		background:bisque;
+		border:2px solid brown;
+		border-radius:7px;
+	}
+	
+	li a{
+		text-decoration:none;
+		text-transform:uppercase;
+		padding:10px;
+		display:block;
+	}
+	
+	li:hover{
+		background:tan;
+	}
+	
+	.footer {
+		background:peru;
+		background-image: url(../images/bg.png);
+		background-repeat:no-repeat;
+		background-position: center 30%;
+		color:brown;
+		font-family:Segoe Print Regular;
+		text-align:left;
+		font-size:15;
+		line-height:1.5;
+		padding:80px 50px 30px;
+		margin:0px;
+		}

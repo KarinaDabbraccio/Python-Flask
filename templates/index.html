@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+    {% include 'date.html' %}
+	<div>
+	    <p><span>{{msg}}</span></p>
+		<p id="date"></p>
+		<p id="time"></p>
+		<ul class="topmenu">
+			<li><a href="special" title="UnorderedList" target="_blank">Special events</a></li>
+			<li><a href="casual" title="UnorderedList" target="_blank">Casual meals</a></li>
+			<li><a href="casual#menu" title="Go to table" target="_blank">Daily menu</a></li>
+			<li><a href="{{ url_for('update_pwd') }}" title="Pwd upd">Update password</a></li>
+			<li><a href="{{ url_for('logout') }}" title="Log out">Log out</a></li>
+		</ul>
+		<div class="content">
+			<h2>Special events</h2>
+				<div>
+					<a href="special" title="Christmas meal" target="_blank">
+						<img src="static/images/p1.jpg" alt="Cristmas meals">
+					</a>
+				</div>
+				<div class="text">
+					<p>Look for <a href="special" title="special meals" target="_blank">more information</a> 
+					about meals at weddings, New Year, Christmas, birthaday parties and other celebrations.
+					</p>
+				</div>
+			<h2>Casual meals</h2>
+				<div>
+					<a href="casual" title="borch" target="_blank">
+						<img src="static/images/borsch.jpg" alt="borsch">
+					</a>
+					<p>Daily Ukrainian meals that people make at home are affected by globalization and availability of imported food, 
+					but in many families <a href="casual" title="casual meals" target="_blank">casual meals</a>
+					include something not usual in other countries.</p>
+				</div>
+			
+			<h2>Schools and Universities</h2>
+				<div>
+						<img src="static/images/school.jpg" alt="School">
+
+					<p>This buffees are not meant to be fancy, but mostly to suggest affordable
+					meals. Most Univercities have a small food courts that offer a better selection for higher price, 
+					but the one that is a part of the educational structure is still present and often popular.
+					</p>
+				</div>
+
+		</div>
+
+	</div>
+		
+	<script>
+		var today = new Date;
+		document.getElementById('date').innerHTML= today.toDateString();
+	</script>
+	<script type="text/javascript" charset="utf-8">
+		let a;
+		let time;
+		setInterval(() => {
+		a = new Date();
+		time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+		document.getElementById('time').innerHTML = time;
+		}, 1000);
+	</script>
+
+{% endblock %}

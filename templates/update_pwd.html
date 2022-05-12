@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Password Update</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/dabbr.css') }}">           
+    </head>
+    <body>
+        <div>
+          <div class="content">
+             <div>
+                </br><img src="static/images/bg.png" alt="Ukrainian ravioli - vareniki">
+                <h2></br>UPDATE PASSWORD</h2>
+				<div class="text"><br>
+					<p>Password complexity: length is 12 to 20 characters;<br>
+					should include at least one of:<br>
+					lowercase letter, uppercase letter, number, symbol.
+					</p>
+				</div>
+             </div></br></br>
+                
+				<form action="{{ url_for('update_pwd') }}" method="post">
+                    {% with msg = get_flashed_messages() %}
+						{% if msg %}
+							<h4 class="msg">{{ msg }}</h4>
+						{% endif %}
+					{% endwith %}
+                    <input id="password" name="password" type="password" placeholder="Enter Your New Password" class="textbox"></br></br>
+                    <input id="repeat_pwd" name="repeat_pwd" type="password" placeholder="Repeat Your New Password" class="textbox"/></br></br></br>
+                    <input type="submit" class="btn" value="Update"></br></br>
+                </form>
+				
+            <p>Go back to <a href="{{url_for('index')}}">home page</a></p></br></br>
+			<p><a href="{{url_for('logout')}}">Logout</a></p>
+          </div>
+        </div>
+	</body>
+</html>
